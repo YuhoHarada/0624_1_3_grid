@@ -1,0 +1,30 @@
+body{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 10vh calc(80vh - 18px) 10vh;
+    gap: 1px;
+}
+
+header{
+    grid-column: 1/-1;
+    grid-row: 1/2;
+    background: blue;
+}
+
+aside{
+    grid-column: 1/2;
+    grid-row: 2/3;
+    background: green;
+}
+
+main{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    background: red;
+}
+
+footer{
+    grid-column: 1/-1;
+    grid-row: 3/4;
+    background: indigo;
+}
